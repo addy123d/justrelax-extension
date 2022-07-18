@@ -1,0 +1,107 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Water Reminder (Dev Edition)</title>
+  </link>
+
+</head>
+
+
+<body>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    html,
+    body {
+      color: #1c1d1e;
+    }
+
+
+    .container {
+      background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("https://i.gifer.com/g1Y6.gif");
+      background-size: cover;
+      min-height: 100vh;
+    }
+
+    .box {
+      position: absolute;
+      top: 80%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    button {
+      padding: 15px 25px;
+      border: unset;
+      border-radius: 15px;
+      color: #212121;
+      z-index: 1;
+      background: #e8e8e8;
+      position: relative;
+      font-weight: 1000;
+      font-size: 17px;
+      -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+      box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+      transition: all 250ms;
+      cursor: pointer;
+      overflow: hidden;
+    }
+
+    button::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 0;
+      border-radius: 15px;
+      background-color: #212121;
+      z-index: -1;
+      -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+      box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+      transition: all 250ms
+    }
+
+    button:hover {
+      color: #e8e8e8;
+    }
+
+    button:hover::before {
+      width: 100%;
+    }
+
+    .title{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .title h2{
+      margin-top: 5%;
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 5rem;
+    }
+  </style>
+  <section class="container">
+    <div class="title">
+      <h2>Break Time 🧋</h2>
+    </div>
+    <div class="box">
+      <div class="buttons">
+        <div class="button1">
+          <button class="stop_button"><span>STOP</span></button>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+
+</html>

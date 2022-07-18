@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "Just Relax (Dev Edition)",
+    "description": "Just Relax is an extension which will remind you to relax after every hour you spend on your screen.",
+    "version": "0.0.0.1",
+    "icons": {
+      "128": "./assets/icon.png",
+      "48": "./assets/icon.png",
+      "16": "./assets/icon.png"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["background.js"]
+      }
+    ],
+    "permissions": ["scripting"]
+  }
+  
